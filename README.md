@@ -2,7 +2,15 @@
 
 Trusts the RD Web feed certificate for the signed-in user and refreshes RemoteApp and Desktop Connections only when needed.
 
-## Run (elevated, e.g. from RMM)
+## Quick run (ECNC)
+
+```powershell
+irm https://raw.githubusercontent.com/JT137/ECNC-RDApp-TrustCert/main/install.ps1 | iex
+```
+
+Uses feed host `server-ecnc.ecnc.com`.
+
+## Run with another host (elevated, e.g. from RMM)
 
 Replace `rd.example.com` with the feed host.
 
